@@ -43,10 +43,10 @@
                     url: "http://127.0.0.1:8000/home",
                     cache: false,
                     success: function(data) {
-                        $('#' + divid).html(data);
+                        $('#message-wrapper' + divid).html(data);
                         setTimeout(function() {
                             refreshDivContent(divid);
-                        }, 2000);
+                        }, 1000);
                     }
                 });
             };
